@@ -1,0 +1,14 @@
+header {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-top: 3px solid #278fa9;
+  box-shadow: 0 0 8px 0px #aaa;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+}

@@ -1,0 +1,32 @@
+.input-wrapper {
+  padding: 8px;
+  background-color: white;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  border-radius: 4px;
+  transition: all ease-in-out 10ms;
+}
+
+.input-wrapper:hover {
+  outline: solid #9ccdd9;
+  border: 1px solid white;
+}
+
+.input-wrapper:focus-within {
+  outline: solid #64c7e0;
+  border: 1px solid white;
+}
+
+input {
+  border: none;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+}
