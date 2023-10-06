@@ -77,6 +77,7 @@ const App = () => {
       })
       .catch((err) => {
         setError(err);
+        setSearchResult(null);
       });
   };
 

@@ -7,8 +7,13 @@ import _ from "lodash";
 import EmptyState from "../../molecules/EmptyState";
 
 const SearchHistory = () => {
-  const { searchHistory, setSearchHistory, searchWeather } =
-    useContext(WeatherContext);
+  const {
+    searchHistory,
+    setSearchHistory,
+    searchWeather,
+    setCity,
+    setCountry,
+  } = useContext(WeatherContext);
 
   const handleRemoveHistory = (index: number) => {
     searchHistory.splice(index, 1);
@@ -16,7 +21,8 @@ const SearchHistory = () => {
   };
 
   const handleSearchHistory = (item: any) => {
-    // setSearchHistory(searchHistory.splice(index, 1));
+    setCity(item.city);
+    setCountry(item.country);
     searchWeather(item.city, item.country);
   };
 
