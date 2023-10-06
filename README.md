@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Important note
+
+For this project to work successfully, please get a API KEY from [https://openweathermap.org/](https://openweathermap.org/) and place it in the .env file.
+
 ## Available Scripts
 
 In the project directory, you can run:
