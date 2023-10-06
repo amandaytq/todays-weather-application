@@ -1,28 +1,37 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import "./style.css";
 
 type sizeType = "" | "small" | "medium" | "large";
 
-type VariantType = "primary" | "secondary";
+type ColorType = "primary" | "secondary";
 
-type StyleVariantType = "" | "circle";
+type VariantType = "" | "circle";
 
 type ButtonProps = {
   children?: ReactNode;
   variant?: VariantType;
   size?: sizeType;
-  style?: StyleVariantType;
+  color?: ColorType;
+  disabled?: boolean;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
 };
 
 const Button = ({
   children,
-  variant = "primary",
+  color = "primary",
   size = "",
-  style = "",
+  variant = "",
+  disabled = false,
+  onClick,
   ...others
 }: ButtonProps) => {
   return (
-    <button className={`${variant} ${size} ${style}`} {...others}>
+    <button
+      className={`${variant} ${size} ${color}`}
+      onClick={onClick}
+      disabled={disabled}
+      {...others}
+    >
       {children}
     </button>
   );

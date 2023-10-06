@@ -1,0 +1,20 @@
+.weather-card {
+  text-transform: capitalize;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 2px #d0d0d0;
+}
+
+.weather-card label {
+  width: 120px;
+  color: #555;
+}
+
+.weather-card h1 {
+  font-size: 3rem;
+}
+
+.weather-card h5 {
+  color: #555;
+  font-weight: normal;
+}

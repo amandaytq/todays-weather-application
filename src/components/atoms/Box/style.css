@@ -142,3 +142,9 @@
   margin-top: 24px;
   margin-bottom: 24px;
 }
+
+@media screen and (max-width: 400px) {
+  .box {
+    width: 100%;
+  }
+}

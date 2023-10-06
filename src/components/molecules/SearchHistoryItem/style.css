@@ -1,14 +1,11 @@
-header {
+.search-history-item hr {
+  border: 0;
+  border-bottom: 1px solid #96c6d2;
+  box-shadow: none;
   width: 100%;
-  background-color: #ffffff;
-  padding: 1rem;
-  border-top: 3px solid #278fa9;
-  box-shadow: 0 0 8px 0px #aaa;
-  display: flex;
-  justify-content: center;
+  margin: 0;
 }
 
-.wrapper {
-  width: 100%;
-  max-width: 1440px;
+.search-history-item p {
+  text-transform: capitalize;
 }

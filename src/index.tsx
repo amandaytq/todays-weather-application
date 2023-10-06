@@ -4,14 +4,16 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 
 import reportWebVitals from "./reportWebVitals";
-import LandingContainer from "./container/LandingContainer";
+
+import App from "./App";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
-    <LandingContainer />
+    <App />
   </React.StrictMode>
 );
 

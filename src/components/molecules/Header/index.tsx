@@ -1,4 +1,3 @@
-import React, { ReactNode } from "react";
 import "./style.css";
 import Typography from "../../atoms/Typography";
 
